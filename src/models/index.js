@@ -1,20 +1,21 @@
 const User = require('./user')
-const TravelPlan = require('./plan')
-const Activity = require('./activity')
-const packingThing = require('./packing-things')
+// const TravelPlan = require('./plan')
+// const Activity = require('./activity')
+// const packingThing = require('./packing-things')
 
 const hadiah = new User('hadiah')
 
 const hadiahsplan = hadiah.createPlan(
-	'Onurs trip',
-	100,
-	new Date('2022-11-11'),
-	new Date('2022-11-22'),
-	`mountain`,
-	`asd`,
-	`germany`,
-	`car`
+  'Onurs trip',
+  100,
+  new Date('2022-11-11'),
+  new Date('2022-11-22'),
+  `mountain`,
+  `asd`,
+  `germany`,
+  `car`
 )
+console.log(hadiah)
 // new Date('2022-11-11', '2022-11-22', 'new trip', 'mountain', 'germany', 'solo', '900$')
 // )
 
@@ -28,5 +29,5 @@ console.log(hadiahsplan)
 const Users = [hadiah, sarah, jenna]
 
 module.exports = {
-	Users,
+  Users,
 }
